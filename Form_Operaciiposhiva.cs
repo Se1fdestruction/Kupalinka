@@ -64,7 +64,7 @@ namespace Kupalinka
         private void Operaciiposhiva_Load(object sender, EventArgs e)
         {
             load_sql();
-            sting s;
+
            // this.ControlBox = false;
           //  this.Width = Screen.PrimaryScreen.WorkingArea.Width;
           //  this.Height = Screen.PrimaryScreen.WorkingArea.Height;
