@@ -1,0 +1,157 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{CBA8F5D2-817C-410B-BADD-0124D7947166}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Kupalinka</RootNamespace>
+    <AssemblyName>Kupalinka</AssemblyName>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>x86</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AdvancedDataGridView, Version=1.2.26803.6, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>packages\DG.AdvancedDataGridView.1.2.26803.6\lib\net40\AdvancedDataGridView.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Form_OperaciiposhivaV2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_OperaciiposhivaV2.Designer.cs">
+      <DependentUpon>Form_OperaciiposhivaV2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Cfl.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Cfl.Designer.cs">
+      <DependentUpon>Form_Cfl.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Naimenovanieizd.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Naimenovanieizd.Designer.cs">
+      <DependentUpon>Form_Naimenovanieizd.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Hudogmaster.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Hudogmaster.Designer.cs">
+      <DependentUpon>Form_Hudogmaster.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Operaciiposhiva.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Operaciiposhiva.designer.cs">
+      <DependentUpon>Form_Operaciiposhiva.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Login.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Login.designer.cs">
+      <DependentUpon>Login.cs</DependentUpon>
+    </Compile>
+    <Compile Include="WorkDBF.cs" />
+    <Compile Include="Form_KorTomodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_KorTomodel.Designer.cs">
+      <DependentUpon>Form_KorTomodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Form_Tomodel.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Tomodel.Designer.cs">
+      <DependentUpon>Form_Tomodel.cs</DependentUpon>
+    </Compile>
+    <Compile Include="SQLConnect.cs" />
+    <Compile Include="Form_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Form_Menu.Designer.cs">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="Form_Cfl.resx">
+      <DependentUpon>Form_Cfl.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Naimenovanieizd.resx">
+      <DependentUpon>Form_Naimenovanieizd.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Hudogmaster.resx">
+      <DependentUpon>Form_Hudogmaster.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_KorTomodel.resx">
+      <DependentUpon>Form_KorTomodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Operaciiposhiva.resx">
+      <DependentUpon>Form_Operaciiposhiva.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_OperaciiposhivaV2.resx">
+      <DependentUpon>Form_OperaciiposhivaV2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Login.resx">
+      <DependentUpon>Login.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Tomodel.resx">
+      <DependentUpon>Form_Tomodel.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Form_Menu.resx">
+      <DependentUpon>Form_Menu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+    </Compile>
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
