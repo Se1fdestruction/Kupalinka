@@ -327,12 +327,11 @@
             this.tabControl1.Controls.Add(this.tabPage4);
             this.tabControl1.Controls.Add(this.tabPage5);
             this.tabControl1.Controls.Add(this.tabPage6);
-            this.tabControl1.Location = new System.Drawing.Point(29, 120);
+            this.tabControl1.Location = new System.Drawing.Point(0, 27);
             this.tabControl1.Name = "tabControl1";
             this.tabControl1.SelectedIndex = 0;
             this.tabControl1.Size = new System.Drawing.Size(1564, 775);
             this.tabControl1.TabIndex = 1;
-            this.tabControl1.Visible = false;
             // 
             // tabPage1
             // 
@@ -1005,7 +1004,7 @@
             // 
             this.hm_model.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.hm_model.FormattingEnabled = true;
-            this.hm_model.Location = new System.Drawing.Point(8, -105);
+            this.hm_model.Location = new System.Drawing.Point(8, 97);
             this.hm_model.Name = "hm_model";
             this.hm_model.Size = new System.Drawing.Size(150, 550);
             this.hm_model.TabIndex = 23;
