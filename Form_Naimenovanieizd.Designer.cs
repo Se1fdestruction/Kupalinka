@@ -93,6 +93,7 @@
             this.Controls.Add(this.lb_ni1);
             this.Controls.Add(this.lb_naimizd);
             this.Name = "Form_Naimenovanieizd";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Наименование изделия";
             this.Load += new System.EventHandler(this.Naimenovanieizd_Load);
             this.groupBox1.ResumeLayout(false);
