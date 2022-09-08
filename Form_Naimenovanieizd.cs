@@ -52,10 +52,15 @@ namespace Kupalinka
         {
                 foreach (DataRow dt in nz.Rows)
                 {
-                    if (dt["NAIMENOVANIE"].ToString() == lb_naimizd.SelectedItem.ToString())
+                    if (lb_naimizd.SelectedItem.ToString() != null)
                     {
-                        lb_ni1.Text = dt["NAIMENOVANIE"].ToString();
+                        if (dt["NAIMENOVANIE"].ToString() == lb_naimizd.SelectedItem.ToString())
+                        {
+                            lb_ni1.Text = dt["NAIMENOVANIE"].ToString();
+                        }
                     }
+
+               
                 }
         }
 
