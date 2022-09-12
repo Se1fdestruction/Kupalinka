@@ -121,7 +121,7 @@ namespace Kupalinka
                 hm_kudamodel.Text = "";
 
                 hm_assortiment.Text = "";
-                hm_scala.Text = "";
+                lb_scala.Text = "";
                 hm_razmfigury1.Text = "";
                 hm_razmfigury2.Text = "";
                 hm_kollecia.Text = "";
@@ -153,7 +153,7 @@ namespace Kupalinka
                         hm_kudamodel.Text = hm["KUDAMODEL"].ToString();
 
                         hm_assortiment.Text = hm["ASSORTIMENT"].ToString();
-                        hm_scala.Text = hm["SCALA"].ToString();
+                        lb_scala.Text = hm["SCALA"].ToString();
                         hm_razmfigury1.Text = hm["RAZMFIGURY1"].ToString();
                         hm_razmfigury2.Text = hm["RAZMFIGURY2"].ToString();
                         hm_kollecia.Text = hm["KOLLECIA"].ToString();
