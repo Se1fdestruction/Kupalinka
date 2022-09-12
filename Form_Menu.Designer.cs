@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.menuStrip1 = new System.Windows.Forms.MenuStrip();
             this.файлToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.справочникиToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
@@ -188,7 +188,6 @@
             this.lb_popravvrem2 = new System.Windows.Forms.TextBox();
             this.label55 = new System.Windows.Forms.Label();
             this.label57 = new System.Windows.Forms.Label();
-            this.label58 = new System.Windows.Forms.Label();
             this.lb_polotnokoeficient = new System.Windows.Forms.TextBox();
             this.label80 = new System.Windows.Forms.Label();
             this.button28 = new System.Windows.Forms.Button();
@@ -206,10 +205,6 @@
             this.label64 = new System.Windows.Forms.Label();
             this.label65 = new System.Windows.Forms.Label();
             this.label66 = new System.Windows.Forms.Label();
-            this.lb_oborudvrem = new System.Windows.Forms.TextBox();
-            this.label67 = new System.Windows.Forms.Label();
-            this.lb_oborudkoeficient = new System.Windows.Forms.TextBox();
-            this.label68 = new System.Windows.Forms.Label();
             this.lb_ruchnoevrema = new System.Windows.Forms.TextBox();
             this.label69 = new System.Windows.Forms.Label();
             this.lb_polotno = new System.Windows.Forms.TextBox();
@@ -322,15 +317,12 @@
             this.tabControl4 = new System.Windows.Forms.TabControl();
             this.tabPage14 = new System.Windows.Forms.TabPage();
             this.tabPage18 = new System.Windows.Forms.TabPage();
-            this.label23 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.hm_id_mod = new System.Windows.Forms.Label();
             this.groupBox3 = new System.Windows.Forms.GroupBox();
             this.hd_button2 = new System.Windows.Forms.Button();
             this.groupBox7 = new System.Windows.Forms.GroupBox();
             this.groupBox6 = new System.Windows.Forms.GroupBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.hm_scala = new System.Windows.Forms.TextBox();
             this.hm_razmfigury1 = new System.Windows.Forms.TextBox();
             this.hm_razmfigury2 = new System.Windows.Forms.TextBox();
             this.label7 = new System.Windows.Forms.Label();
@@ -394,6 +386,26 @@
             this.Column20 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column21 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column22 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.label58 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.label67 = new System.Windows.Forms.Label();
+            this.label68 = new System.Windows.Forms.Label();
+            this.lb_scala = new System.Windows.Forms.TextBox();
+            this.label6 = new System.Windows.Forms.Label();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.label136 = new System.Windows.Forms.Label();
+            this.textBox4 = new System.Windows.Forms.TextBox();
+            this.label137 = new System.Windows.Forms.Label();
+            this.textBox5 = new System.Windows.Forms.TextBox();
+            this.label138 = new System.Windows.Forms.Label();
+            this.textBox6 = new System.Windows.Forms.TextBox();
+            this.groupBox1 = new System.Windows.Forms.GroupBox();
+            this.label139 = new System.Windows.Forms.Label();
+            this.lb_speczakazkto = new System.Windows.Forms.TextBox();
+            this.lb_mod_zak = new System.Windows.Forms.TextBox();
+            this.label140 = new System.Windows.Forms.Label();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -424,11 +436,13 @@
             this.tabPage14.SuspendLayout();
             this.tabPage18.SuspendLayout();
             this.groupBox3.SuspendLayout();
+            this.groupBox7.SuspendLayout();
             this.groupBox6.SuspendLayout();
             this.groupBox5.SuspendLayout();
             this.groupBox4.SuspendLayout();
             this.groupBox2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).BeginInit();
+            this.groupBox1.SuspendLayout();
             this.SuspendLayout();
             // 
             // menuStrip1
@@ -1285,8 +1299,8 @@
             // 
             // Column3
             // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle6.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle6;
             this.Column3.HeaderText = "Норма времени на 1 ед.";
             this.Column3.Name = "Column3";
             this.Column3.Width = 57;
@@ -1385,7 +1399,7 @@
             this.groupBox11.Controls.Add(this.label43);
             this.groupBox11.Location = new System.Drawing.Point(573, 6);
             this.groupBox11.Name = "groupBox11";
-            this.groupBox11.Size = new System.Drawing.Size(315, 61);
+            this.groupBox11.Size = new System.Drawing.Size(339, 61);
             this.groupBox11.TabIndex = 102;
             this.groupBox11.TabStop = false;
             this.groupBox11.Text = "Разработчик операции:";
@@ -1397,7 +1411,7 @@
             this.button22.ForeColor = System.Drawing.Color.Black;
             this.button22.Location = new System.Drawing.Point(195, 39);
             this.button22.Name = "button22";
-            this.button22.Size = new System.Drawing.Size(16, 21);
+            this.button22.Size = new System.Drawing.Size(25, 21);
             this.button22.TabIndex = 67;
             this.button22.Text = "+";
             this.button22.UseVisualStyleBackColor = false;
@@ -1416,7 +1430,7 @@
             this.button23.ForeColor = System.Drawing.Color.Black;
             this.button23.Location = new System.Drawing.Point(195, 13);
             this.button23.Name = "button23";
-            this.button23.Size = new System.Drawing.Size(16, 21);
+            this.button23.Size = new System.Drawing.Size(25, 21);
             this.button23.TabIndex = 66;
             this.button23.Text = "+";
             this.button23.UseVisualStyleBackColor = false;
@@ -1449,7 +1463,7 @@
             // lb_datadobavlenia
             // 
             this.lb_datadobavlenia.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.lb_datadobavlenia.Location = new System.Drawing.Point(223, 39);
+            this.lb_datadobavlenia.Location = new System.Drawing.Point(237, 39);
             this.lb_datadobavlenia.Name = "lb_datadobavlenia";
             this.lb_datadobavlenia.Size = new System.Drawing.Size(92, 20);
             this.lb_datadobavlenia.TabIndex = 25;
@@ -1457,7 +1471,7 @@
             // label43
             // 
             this.label43.AutoSize = true;
-            this.label43.Location = new System.Drawing.Point(220, 21);
+            this.label43.Location = new System.Drawing.Point(234, 21);
             this.label43.Name = "label43";
             this.label43.Size = new System.Drawing.Size(36, 13);
             this.label43.TabIndex = 26;
@@ -1525,9 +1539,9 @@
             this.label46.AutoSize = true;
             this.label46.Location = new System.Drawing.Point(42, 40);
             this.label46.Name = "label46";
-            this.label46.Size = new System.Drawing.Size(175, 13);
+            this.label46.Size = new System.Drawing.Size(163, 13);
             this.label46.TabIndex = 50;
-            this.label46.Text = "((a+c+e+f+g+h+i+k)*d)*(1+(b/100))=";
+            this.label46.Text = "((a+c+f+g+h+i+k)*d)*(1+(b/100))=";
             // 
             // label44
             // 
@@ -1636,8 +1650,7 @@
             this.lb_status.FormattingEnabled = true;
             this.lb_status.Items.AddRange(new object[] {
             "Не утверждено",
-            "Утверждено",
-            "Согласование"});
+            "Утверждено"});
             this.lb_status.Location = new System.Drawing.Point(9, 33);
             this.lb_status.Name = "lb_status";
             this.lb_status.Size = new System.Drawing.Size(104, 21);
@@ -1686,7 +1699,6 @@
             this.groupBox14.Controls.Add(this.button27);
             this.groupBox14.Controls.Add(this.label45);
             this.groupBox14.Controls.Add(this.groupBox16);
-            this.groupBox14.Controls.Add(this.label58);
             this.groupBox14.Controls.Add(this.lb_polotnokoeficient);
             this.groupBox14.Controls.Add(this.label80);
             this.groupBox14.Controls.Add(this.button28);
@@ -1704,10 +1716,6 @@
             this.groupBox14.Controls.Add(this.label64);
             this.groupBox14.Controls.Add(this.label65);
             this.groupBox14.Controls.Add(this.label66);
-            this.groupBox14.Controls.Add(this.lb_oborudvrem);
-            this.groupBox14.Controls.Add(this.label67);
-            this.groupBox14.Controls.Add(this.lb_oborudkoeficient);
-            this.groupBox14.Controls.Add(this.label68);
             this.groupBox14.Controls.Add(this.lb_ruchnoevrema);
             this.groupBox14.Controls.Add(this.label69);
             this.groupBox14.Controls.Add(this.lb_polotno);
@@ -1983,15 +1991,6 @@
             this.label57.TabIndex = 41;
             this.label57.Text = "2.";
             // 
-            // label58
-            // 
-            this.label58.AutoSize = true;
-            this.label58.Location = new System.Drawing.Point(497, 166);
-            this.label58.Name = "label58";
-            this.label58.Size = new System.Drawing.Size(23, 13);
-            this.label58.TabIndex = 47;
-            this.label58.Text = "\"e\"";
-            // 
             // lb_polotnokoeficient
             // 
             this.lb_polotnokoeficient.Location = new System.Drawing.Point(153, 162);
@@ -2148,38 +2147,6 @@
             this.label66.Size = new System.Drawing.Size(23, 13);
             this.label66.TabIndex = 43;
             this.label66.Text = "\"a\"";
-            // 
-            // lb_oborudvrem
-            // 
-            this.lb_oborudvrem.Location = new System.Drawing.Point(427, 163);
-            this.lb_oborudvrem.Name = "lb_oborudvrem";
-            this.lb_oborudvrem.Size = new System.Drawing.Size(68, 20);
-            this.lb_oborudvrem.TabIndex = 38;
-            // 
-            // label67
-            // 
-            this.label67.AutoSize = true;
-            this.label67.Location = new System.Drawing.Point(425, 146);
-            this.label67.Name = "label67";
-            this.label67.Size = new System.Drawing.Size(73, 13);
-            this.label67.TabIndex = 37;
-            this.label67.Text = "Время (сек.):";
-            // 
-            // lb_oborudkoeficient
-            // 
-            this.lb_oborudkoeficient.Location = new System.Drawing.Point(378, 163);
-            this.lb_oborudkoeficient.Name = "lb_oborudkoeficient";
-            this.lb_oborudkoeficient.Size = new System.Drawing.Size(43, 20);
-            this.lb_oborudkoeficient.TabIndex = 36;
-            // 
-            // label68
-            // 
-            this.label68.AutoSize = true;
-            this.label68.Location = new System.Drawing.Point(375, 148);
-            this.label68.Name = "label68";
-            this.label68.Size = new System.Drawing.Size(46, 13);
-            this.label68.TabIndex = 35;
-            this.label68.Text = "(Коэф.):";
             // 
             // lb_ruchnoevrema
             // 
@@ -3218,7 +3185,7 @@
             // 
             // tabPage18
             // 
-            this.tabPage18.Controls.Add(this.label23);
+            this.tabPage18.Controls.Add(this.groupBox7);
             this.tabPage18.Controls.Add(this.label22);
             this.tabPage18.Controls.Add(this.hm_id_mod);
             this.tabPage18.Controls.Add(this.groupBox3);
@@ -3231,15 +3198,6 @@
             this.tabPage18.TabIndex = 1;
             this.tabPage18.Text = "Карточка Модели";
             this.tabPage18.UseVisualStyleBackColor = true;
-            // 
-            // label23
-            // 
-            this.label23.AutoSize = true;
-            this.label23.Location = new System.Drawing.Point(170, 20);
-            this.label23.Name = "label23";
-            this.label23.Size = new System.Drawing.Size(133, 13);
-            this.label23.TabIndex = 31;
-            this.label23.Text = "Создание новой модели:";
             // 
             // label22
             // 
@@ -3264,8 +3222,8 @@
             // 
             // groupBox3
             // 
+            this.groupBox3.Controls.Add(this.groupBox1);
             this.groupBox3.Controls.Add(this.hd_button2);
-            this.groupBox3.Controls.Add(this.groupBox7);
             this.groupBox3.Controls.Add(this.groupBox6);
             this.groupBox3.Controls.Add(this.groupBox5);
             this.groupBox3.Controls.Add(this.groupBox4);
@@ -3279,9 +3237,9 @@
             this.groupBox3.Controls.Add(this.label3);
             this.groupBox3.Controls.Add(this.label2);
             this.groupBox3.Controls.Add(this.hm_mod);
-            this.groupBox3.Location = new System.Drawing.Point(168, 36);
+            this.groupBox3.Location = new System.Drawing.Point(173, 114);
             this.groupBox3.Name = "groupBox3";
-            this.groupBox3.Size = new System.Drawing.Size(797, 536);
+            this.groupBox3.Size = new System.Drawing.Size(1057, 429);
             this.groupBox3.TabIndex = 34;
             this.groupBox3.TabStop = false;
             // 
@@ -3289,19 +3247,28 @@
             // 
             this.hd_button2.BackColor = System.Drawing.Color.Gray;
             this.hd_button2.Font = new System.Drawing.Font("Microsoft Sans Serif", 6F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(204)));
-            this.hd_button2.Location = new System.Drawing.Point(751, 199);
+            this.hd_button2.Location = new System.Drawing.Point(501, 90);
             this.hd_button2.Name = "hd_button2";
             this.hd_button2.Size = new System.Drawing.Size(22, 21);
             this.hd_button2.TabIndex = 33;
             this.hd_button2.Text = "+";
             this.hd_button2.UseVisualStyleBackColor = false;
+            this.hd_button2.Click += new System.EventHandler(this.Hd_button2_Click);
             // 
             // groupBox7
             // 
             this.groupBox7.BackColor = System.Drawing.Color.White;
-            this.groupBox7.Location = new System.Drawing.Point(6, 9);
+            this.groupBox7.Controls.Add(this.label138);
+            this.groupBox7.Controls.Add(this.textBox6);
+            this.groupBox7.Controls.Add(this.label137);
+            this.groupBox7.Controls.Add(this.textBox5);
+            this.groupBox7.Controls.Add(this.label136);
+            this.groupBox7.Controls.Add(this.textBox4);
+            this.groupBox7.Controls.Add(this.label6);
+            this.groupBox7.Controls.Add(this.textBox3);
+            this.groupBox7.Location = new System.Drawing.Point(173, 8);
             this.groupBox7.Name = "groupBox7";
-            this.groupBox7.Size = new System.Drawing.Size(785, 100);
+            this.groupBox7.Size = new System.Drawing.Size(479, 100);
             this.groupBox7.TabIndex = 32;
             this.groupBox7.TabStop = false;
             this.groupBox7.Text = "Художественно - технический совет (ХТС):";
@@ -3309,33 +3276,22 @@
             // groupBox6
             // 
             this.groupBox6.BackColor = System.Drawing.Color.White;
-            this.groupBox6.Controls.Add(this.label6);
-            this.groupBox6.Controls.Add(this.hm_scala);
+            this.groupBox6.Controls.Add(this.label1);
+            this.groupBox6.Controls.Add(this.textBox2);
+            this.groupBox6.Controls.Add(this.label58);
+            this.groupBox6.Controls.Add(this.textBox1);
+            this.groupBox6.Controls.Add(this.label67);
+            this.groupBox6.Controls.Add(this.label68);
+            this.groupBox6.Controls.Add(this.lb_scala);
             this.groupBox6.Controls.Add(this.hm_razmfigury1);
             this.groupBox6.Controls.Add(this.hm_razmfigury2);
             this.groupBox6.Controls.Add(this.label7);
             this.groupBox6.Controls.Add(this.label8);
-            this.groupBox6.Location = new System.Drawing.Point(6, 237);
+            this.groupBox6.Location = new System.Drawing.Point(3, 128);
             this.groupBox6.Name = "groupBox6";
-            this.groupBox6.Size = new System.Drawing.Size(353, 109);
+            this.groupBox6.Size = new System.Drawing.Size(496, 109);
             this.groupBox6.TabIndex = 31;
             this.groupBox6.TabStop = false;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.Location = new System.Drawing.Point(29, 16);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(114, 13);
-            this.label6.TabIndex = 9;
-            this.label6.Text = "Диапазон размеров:";
-            // 
-            // hm_scala
-            // 
-            this.hm_scala.Location = new System.Drawing.Point(154, 13);
-            this.hm_scala.Name = "hm_scala";
-            this.hm_scala.Size = new System.Drawing.Size(191, 20);
-            this.hm_scala.TabIndex = 8;
             // 
             // hm_razmfigury1
             // 
@@ -3390,7 +3346,7 @@
             this.groupBox5.Controls.Add(this.label17);
             this.groupBox5.Controls.Add(this.label16);
             this.groupBox5.Controls.Add(this.label15);
-            this.groupBox5.Location = new System.Drawing.Point(189, 352);
+            this.groupBox5.Location = new System.Drawing.Point(186, 243);
             this.groupBox5.Name = "groupBox5";
             this.groupBox5.Size = new System.Drawing.Size(174, 179);
             this.groupBox5.TabIndex = 30;
@@ -3580,7 +3536,7 @@
             this.groupBox4.Controls.Add(this.label11);
             this.groupBox4.Controls.Add(this.label10);
             this.groupBox4.Controls.Add(this.label21);
-            this.groupBox4.Location = new System.Drawing.Point(14, 352);
+            this.groupBox4.Location = new System.Drawing.Point(11, 243);
             this.groupBox4.Name = "groupBox4";
             this.groupBox4.Size = new System.Drawing.Size(169, 179);
             this.groupBox4.TabIndex = 29;
@@ -3752,7 +3708,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(551, 122);
+            this.label9.Location = new System.Drawing.Point(326, 12);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(65, 13);
             this.label9.TabIndex = 15;
@@ -3760,15 +3716,15 @@
             // 
             // hm_kollecia
             // 
-            this.hm_kollecia.Location = new System.Drawing.Point(554, 139);
+            this.hm_kollecia.Location = new System.Drawing.Point(329, 29);
             this.hm_kollecia.Name = "hm_kollecia";
-            this.hm_kollecia.Size = new System.Drawing.Size(201, 20);
+            this.hm_kollecia.Size = new System.Drawing.Size(170, 20);
             this.hm_kollecia.TabIndex = 14;
             // 
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Location = new System.Drawing.Point(268, 122);
+            this.label5.Location = new System.Drawing.Point(168, 13);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(77, 13);
             this.label5.TabIndex = 7;
@@ -3783,15 +3739,15 @@
             "Ясельный",
             "Мужской",
             "Прочее"});
-            this.hm_assortiment.Location = new System.Drawing.Point(271, 138);
+            this.hm_assortiment.Location = new System.Drawing.Point(171, 29);
             this.hm_assortiment.Name = "hm_assortiment";
-            this.hm_assortiment.Size = new System.Drawing.Size(204, 21);
+            this.hm_assortiment.Size = new System.Drawing.Size(141, 21);
             this.hm_assortiment.TabIndex = 6;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(6, 122);
+            this.label4.Location = new System.Drawing.Point(3, 13);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(98, 13);
             this.label4.TabIndex = 5;
@@ -3803,47 +3759,47 @@
             this.hm_kudamodel.Items.AddRange(new object[] {
             "ОАО Купалинка",
             "Спецзаказ"});
-            this.hm_kudamodel.Location = new System.Drawing.Point(9, 138);
+            this.hm_kudamodel.Location = new System.Drawing.Point(6, 29);
             this.hm_kudamodel.Name = "hm_kudamodel";
-            this.hm_kudamodel.Size = new System.Drawing.Size(204, 21);
+            this.hm_kudamodel.Size = new System.Drawing.Size(145, 21);
             this.hm_kudamodel.TabIndex = 4;
             // 
             // hm_ni
             // 
-            this.hm_ni.Location = new System.Drawing.Point(270, 200);
+            this.hm_ni.Location = new System.Drawing.Point(171, 91);
             this.hm_ni.Name = "hm_ni";
-            this.hm_ni.Size = new System.Drawing.Size(475, 20);
+            this.hm_ni.Size = new System.Drawing.Size(328, 20);
             this.hm_ni.TabIndex = 3;
             // 
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(269, 184);
+            this.label3.Location = new System.Drawing.Point(170, 75);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(127, 13);
+            this.label3.Size = new System.Drawing.Size(209, 13);
             this.label3.TabIndex = 2;
-            this.label3.Text = "Наименование модели:";
+            this.label3.Text = "Наименование модели (Производство):";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(11, 184);
+            this.label2.Location = new System.Drawing.Point(8, 75);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(184, 13);
+            this.label2.Size = new System.Drawing.Size(144, 13);
             this.label2.TabIndex = 1;
-            this.label2.Text = "Номер модели (ОАО \"Купалинка\"):";
+            this.label2.Text = "№ модели (Производство):";
             // 
             // hm_mod
             // 
-            this.hm_mod.Location = new System.Drawing.Point(11, 200);
+            this.hm_mod.Location = new System.Drawing.Point(8, 91);
             this.hm_mod.Name = "hm_mod";
-            this.hm_mod.Size = new System.Drawing.Size(181, 20);
+            this.hm_mod.Size = new System.Drawing.Size(143, 20);
             this.hm_mod.TabIndex = 0;
             // 
             // groupBox2
             // 
             this.groupBox2.Controls.Add(this.hm_searh);
-            this.groupBox2.Location = new System.Drawing.Point(6, 20);
+            this.groupBox2.Location = new System.Drawing.Point(6, 8);
             this.groupBox2.Name = "groupBox2";
             this.groupBox2.Size = new System.Drawing.Size(150, 44);
             this.groupBox2.TabIndex = 33;
@@ -3861,7 +3817,7 @@
             // 
             this.hm_model.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
             this.hm_model.FormattingEnabled = true;
-            this.hm_model.Location = new System.Drawing.Point(6, 104);
+            this.hm_model.Location = new System.Drawing.Point(6, 53);
             this.hm_model.Name = "hm_model";
             this.hm_model.Size = new System.Drawing.Size(150, 459);
             this.hm_model.TabIndex = 30;
@@ -3921,6 +3877,175 @@
             // 
             this.Column22.HeaderText = "Дата присвоения (Производство)";
             this.Column22.Name = "Column22";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(384, 3);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(27, 13);
+            this.label1.TabIndex = 25;
+            this.label1.Text = "№3:";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(387, 19);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(100, 20);
+            this.textBox2.TabIndex = 24;
+            // 
+            // label58
+            // 
+            this.label58.AutoSize = true;
+            this.label58.Location = new System.Drawing.Point(269, 3);
+            this.label58.Name = "label58";
+            this.label58.Size = new System.Drawing.Size(27, 13);
+            this.label58.TabIndex = 23;
+            this.label58.Text = "№2:";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(272, 19);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(100, 20);
+            this.textBox1.TabIndex = 22;
+            // 
+            // label67
+            // 
+            this.label67.AutoSize = true;
+            this.label67.Location = new System.Drawing.Point(151, 3);
+            this.label67.Name = "label67";
+            this.label67.Size = new System.Drawing.Size(27, 13);
+            this.label67.TabIndex = 21;
+            this.label67.Text = "№1:";
+            // 
+            // label68
+            // 
+            this.label68.AutoSize = true;
+            this.label68.Location = new System.Drawing.Point(6, 16);
+            this.label68.Name = "label68";
+            this.label68.Size = new System.Drawing.Size(114, 13);
+            this.label68.TabIndex = 20;
+            this.label68.Text = "Диапазон размеров:";
+            // 
+            // lb_scala
+            // 
+            this.lb_scala.Location = new System.Drawing.Point(154, 19);
+            this.lb_scala.Name = "lb_scala";
+            this.lb_scala.Size = new System.Drawing.Size(100, 20);
+            this.lb_scala.TabIndex = 19;
+            // 
+            // label6
+            // 
+            this.label6.AutoSize = true;
+            this.label6.Location = new System.Drawing.Point(10, 20);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(45, 13);
+            this.label6.TabIndex = 17;
+            this.label6.Text = "№ ХТС:";
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(13, 36);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(99, 20);
+            this.textBox3.TabIndex = 16;
+            // 
+            // label136
+            // 
+            this.label136.AutoSize = true;
+            this.label136.Location = new System.Drawing.Point(176, 20);
+            this.label136.Name = "label136";
+            this.label136.Size = new System.Drawing.Size(99, 13);
+            this.label136.TabIndex = 19;
+            this.label136.Text = "Дата проведения:";
+            // 
+            // textBox4
+            // 
+            this.textBox4.Location = new System.Drawing.Point(179, 36);
+            this.textBox4.Name = "textBox4";
+            this.textBox4.Size = new System.Drawing.Size(110, 20);
+            this.textBox4.TabIndex = 18;
+            // 
+            // label137
+            // 
+            this.label137.AutoSize = true;
+            this.label137.Location = new System.Drawing.Point(10, 59);
+            this.label137.Name = "label137";
+            this.label137.Size = new System.Drawing.Size(106, 13);
+            this.label137.TabIndex = 21;
+            this.label137.Text = "№ модели рабочий:";
+            // 
+            // textBox5
+            // 
+            this.textBox5.Location = new System.Drawing.Point(13, 75);
+            this.textBox5.Name = "textBox5";
+            this.textBox5.Size = new System.Drawing.Size(131, 20);
+            this.textBox5.TabIndex = 20;
+            // 
+            // label138
+            // 
+            this.label138.AutoSize = true;
+            this.label138.Location = new System.Drawing.Point(176, 59);
+            this.label138.Name = "label138";
+            this.label138.Size = new System.Drawing.Size(171, 13);
+            this.label138.TabIndex = 23;
+            this.label138.Text = "Наименование модели рабочее:";
+            // 
+            // textBox6
+            // 
+            this.textBox6.Location = new System.Drawing.Point(179, 75);
+            this.textBox6.Name = "textBox6";
+            this.textBox6.Size = new System.Drawing.Size(290, 20);
+            this.textBox6.TabIndex = 22;
+            // 
+            // groupBox1
+            // 
+            this.groupBox1.BackColor = System.Drawing.Color.White;
+            this.groupBox1.Controls.Add(this.label139);
+            this.groupBox1.Controls.Add(this.lb_speczakazkto);
+            this.groupBox1.Controls.Add(this.lb_mod_zak);
+            this.groupBox1.Controls.Add(this.label140);
+            this.groupBox1.Location = new System.Drawing.Point(531, 13);
+            this.groupBox1.Name = "groupBox1";
+            this.groupBox1.Size = new System.Drawing.Size(430, 66);
+            this.groupBox1.TabIndex = 34;
+            this.groupBox1.TabStop = false;
+            this.groupBox1.Text = "Для спецзаказа:";
+            // 
+            // label139
+            // 
+            this.label139.AutoSize = true;
+            this.label139.Location = new System.Drawing.Point(12, 25);
+            this.label139.Name = "label139";
+            this.label139.Size = new System.Drawing.Size(85, 13);
+            this.label139.TabIndex = 19;
+            this.label139.Text = "Номер модели:";
+            // 
+            // lb_speczakazkto
+            // 
+            this.lb_speczakazkto.BackColor = System.Drawing.Color.White;
+            this.lb_speczakazkto.Location = new System.Drawing.Point(219, 40);
+            this.lb_speczakazkto.Name = "lb_speczakazkto";
+            this.lb_speczakazkto.Size = new System.Drawing.Size(200, 20);
+            this.lb_speczakazkto.TabIndex = 23;
+            // 
+            // lb_mod_zak
+            // 
+            this.lb_mod_zak.BackColor = System.Drawing.Color.White;
+            this.lb_mod_zak.Location = new System.Drawing.Point(15, 41);
+            this.lb_mod_zak.Name = "lb_mod_zak";
+            this.lb_mod_zak.Size = new System.Drawing.Size(181, 20);
+            this.lb_mod_zak.TabIndex = 18;
+            // 
+            // label140
+            // 
+            this.label140.AutoSize = true;
+            this.label140.Location = new System.Drawing.Point(216, 24);
+            this.label140.Name = "label140";
+            this.label140.Size = new System.Drawing.Size(128, 13);
+            this.label140.TabIndex = 22;
+            this.label140.Text = "Название организации:";
             // 
             // Form_Menu
             // 
@@ -3983,6 +4108,8 @@
             this.tabPage18.PerformLayout();
             this.groupBox3.ResumeLayout(false);
             this.groupBox3.PerformLayout();
+            this.groupBox7.ResumeLayout(false);
+            this.groupBox7.PerformLayout();
             this.groupBox6.ResumeLayout(false);
             this.groupBox6.PerformLayout();
             this.groupBox5.ResumeLayout(false);
@@ -3992,6 +4119,8 @@
             this.groupBox2.ResumeLayout(false);
             this.groupBox2.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dataGridView1)).EndInit();
+            this.groupBox1.ResumeLayout(false);
+            this.groupBox1.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -4154,7 +4283,6 @@
         private System.Windows.Forms.TextBox lb_popravvrem2;
         private System.Windows.Forms.Label label55;
         private System.Windows.Forms.Label label57;
-        private System.Windows.Forms.Label label58;
         private System.Windows.Forms.TextBox lb_polotnokoeficient;
         private System.Windows.Forms.Label label80;
         private System.Windows.Forms.Button button28;
@@ -4172,10 +4300,6 @@
         private System.Windows.Forms.Label label64;
         private System.Windows.Forms.Label label65;
         private System.Windows.Forms.Label label66;
-        private System.Windows.Forms.TextBox lb_oborudvrem;
-        private System.Windows.Forms.Label label67;
-        private System.Windows.Forms.TextBox lb_oborudkoeficient;
-        private System.Windows.Forms.Label label68;
         private System.Windows.Forms.TextBox lb_ruchnoevrema;
         private System.Windows.Forms.Label label69;
         private System.Windows.Forms.TextBox lb_polotno;
@@ -4300,15 +4424,12 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Column21;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column22;
         private System.Windows.Forms.TabPage tabPage18;
-        private System.Windows.Forms.Label label23;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label hm_id_mod;
         private System.Windows.Forms.GroupBox groupBox3;
         private System.Windows.Forms.Button hd_button2;
         private System.Windows.Forms.GroupBox groupBox7;
         private System.Windows.Forms.GroupBox groupBox6;
-        private System.Windows.Forms.Label label6;
-        private System.Windows.Forms.TextBox hm_scala;
         private System.Windows.Forms.TextBox hm_razmfigury1;
         private System.Windows.Forms.TextBox hm_razmfigury2;
         private System.Windows.Forms.Label label7;
@@ -4364,5 +4485,25 @@
         private System.Windows.Forms.GroupBox groupBox2;
         private System.Windows.Forms.TextBox hm_searh;
         private System.Windows.Forms.ListBox hm_model;
+        private System.Windows.Forms.Label label138;
+        private System.Windows.Forms.TextBox textBox6;
+        private System.Windows.Forms.Label label137;
+        private System.Windows.Forms.TextBox textBox5;
+        private System.Windows.Forms.Label label136;
+        private System.Windows.Forms.TextBox textBox4;
+        private System.Windows.Forms.Label label6;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox2;
+        private System.Windows.Forms.Label label58;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label label67;
+        private System.Windows.Forms.Label label68;
+        private System.Windows.Forms.TextBox lb_scala;
+        private System.Windows.Forms.GroupBox groupBox1;
+        private System.Windows.Forms.Label label139;
+        private System.Windows.Forms.TextBox lb_speczakazkto;
+        private System.Windows.Forms.TextBox lb_mod_zak;
+        private System.Windows.Forms.Label label140;
     }
 }

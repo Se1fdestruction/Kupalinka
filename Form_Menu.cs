@@ -359,6 +359,11 @@ namespace Kupalinka
         {
             Application.Exit();
         }
+
+        private void Hd_button2_Click(object sender, EventArgs e)
+        {
+
+        }
     }
     
 }
