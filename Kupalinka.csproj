@@ -48,6 +48,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Connecting.cs" />
     <Compile Include="Form_OperaciiposhivaV2.cs">
       <SubType>Form</SubType>
     </Compile>

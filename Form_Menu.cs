@@ -6,12 +6,20 @@ using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Windows.Forms;
+using System.Runtime.Serialization.Formatters.Binary;
+using System.Runtime.Serialization;
+using System.Net.Sockets;
 
 namespace Kupalinka
 {
     public partial class Form_Menu : Form
     {
-        
+        //данные сервера
+        int port = 10101;
+        string address = "192.155.11.220";
+
+
+
         public Form_Menu()
         {
             InitializeComponent();            
@@ -364,6 +372,14 @@ namespace Kupalinka
         {
 
         }
+
+        private void tabControl2_Selected(object sender, TabControlEventArgs e)
+        {
+            TcpClient client = null;
+
+        }
+
+        
     }
     
 }
