@@ -391,11 +391,13 @@
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
             this.NOMEROPERACII = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -1584,11 +1586,13 @@
             this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NOMEROPERACII,
+            this.Column12,
             this.Column1,
             this.Column2,
             this.Column3,
             this.Column6,
             this.Column4,
+            this.Column8,
             this.Column9,
             this.Column10,
             this.Column5,
@@ -3945,16 +3949,22 @@
             // NOMEROPERACII
             // 
             this.NOMEROPERACII.FillWeight = 70F;
-            this.NOMEROPERACII.HeaderText = "№ опер. Новый";
+            this.NOMEROPERACII.HeaderText = "№ операции основной";
             this.NOMEROPERACII.Name = "NOMEROPERACII";
-            this.NOMEROPERACII.Width = 50;
+            this.NOMEROPERACII.Width = 60;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "№ операции дополнит.";
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 60;
             // 
             // Column1
             // 
             this.Column1.FillWeight = 70F;
-            this.Column1.HeaderText = "№ опер. Dos";
+            this.Column1.HeaderText = "№ операции Dos";
             this.Column1.Name = "Column1";
-            this.Column1.Width = 50;
+            this.Column1.Width = 60;
             // 
             // Column2
             // 
@@ -3966,7 +3976,7 @@
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
             this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column3.HeaderText = "Норма времени на 1 ед.";
+            this.Column3.HeaderText = "Норма времени на 1 ед. сек.";
             this.Column3.Name = "Column3";
             this.Column3.Width = 57;
             // 
@@ -3974,47 +3984,53 @@
             // 
             this.Column6.HeaderText = "Норма за смену шт.";
             this.Column6.Name = "Column6";
-            this.Column6.Width = 60;
+            this.Column6.Width = 80;
             // 
             // Column4
             // 
-            this.Column4.HeaderText = "Время утвержденное";
+            this.Column4.HeaderText = "Время утвержденное сек.";
             this.Column4.Name = "Column4";
             this.Column4.Width = 57;
             // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Расчёт ручного времени сек.";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 70;
+            // 
             // Column9
             // 
-            this.Column9.HeaderText = "Время Поправ.1";
+            this.Column9.HeaderText = "Время Поправ.1 сек.";
             this.Column9.Name = "Column9";
             this.Column9.Width = 57;
             // 
             // Column10
             // 
-            this.Column10.HeaderText = "Время Поправ.2";
+            this.Column10.HeaderText = "Время Поправ.2 сек.";
             this.Column10.Name = "Column10";
             this.Column10.Width = 57;
             // 
             // Column5
             // 
-            this.Column5.HeaderText = "Время Поправ.3";
+            this.Column5.HeaderText = "Время Поправ.3 сек.";
             this.Column5.Name = "Column5";
             this.Column5.Width = 57;
             // 
             // Column14
             // 
-            this.Column14.HeaderText = "Время Поправ.4";
+            this.Column14.HeaderText = "Время Поправ.4 сек.";
             this.Column14.Name = "Column14";
             this.Column14.Width = 57;
             // 
             // Column15
             // 
-            this.Column15.HeaderText = "Время Поправ.5";
+            this.Column15.HeaderText = "Время Поправ.5 сек.";
             this.Column15.Name = "Column15";
             this.Column15.Width = 57;
             // 
             // Column11
             // 
-            this.Column11.HeaderText = "Коэф. на отдых";
+            this.Column11.HeaderText = "Коэф. на отдых %";
             this.Column11.Name = "Column11";
             this.Column11.Width = 57;
             // 
@@ -4467,11 +4483,13 @@
         private System.Windows.Forms.TextBox lb_mod_zak;
         private System.Windows.Forms.Label label140;
         private System.Windows.Forms.DataGridViewTextBoxColumn NOMEROPERACII;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column12;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column1;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column2;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column3;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column4;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Column8;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column9;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column10;
         private System.Windows.Forms.DataGridViewTextBoxColumn Column5;
