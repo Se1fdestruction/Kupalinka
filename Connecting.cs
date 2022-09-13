@@ -7,6 +7,8 @@ using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.IO;
 using System.Data;
+using Operp;
+using System.Windows.Forms;
 
 namespace Kupalinka
 {
@@ -15,7 +17,7 @@ namespace Kupalinka
         static int port = 10101;
         static string address = "192.155.11.220";
 
-        static public void connect(string message)
+        static public List<Operaciiposhiva> connect_sql_operaciiposhiva(string message)
         {
             TcpClient client = null;
 
@@ -24,39 +26,41 @@ namespace Kupalinka
                 client = new TcpClient(address, port);
                 NetworkStream stream = client.GetStream();
 
-                List<select_lsh.select_lsh> lshchet = new List<select_lsh.select_lsh>();
-                byte[] data = Encoding.Unicode.GetBytes(richTextBox1.Text);
+                byte[] data = Encoding.Unicode.GetBytes(message);
                 // отправка сообщения
                 stream.Write(data, 0, data.Length);
 
                 // получаем ответ
                 data = new byte[16777216]; // буфер для получаемых данных
-                StringBuilder builder = new StringBuilder();
+                          //  StringBuilder builder = new StringBuilder();
+                List<Operaciiposhiva> operaciiposhiva = new List<Operaciiposhiva>();
                 int bytes;
                 do
                 {
                     bytes = stream.Read(data, 0, data.Length);
                     BinaryFormatter formatter = new BinaryFormatter();
                     MemoryStream mstream = new MemoryStream(data);
-                    select_lsh.select_lsh nselect = new select_lsh.select_lsh();
+                   // Operaciiposhiva nselect = new Operaciiposhiva();
                     if (data.Length != 0)
                     {
-                        lshchet = (List<select_lsh.select_lsh>)formatter.Deserialize(mstream);
+                        operaciiposhiva = (List<Operaciiposhiva>)formatter.Deserialize(mstream);
                         //  lshchet.Add(nselect);
                     }
-
                 }
                 while (stream.DataAvailable);
 
-                builder.Append(Encoding.Unicode.GetString(data, 0, bytes));
+                //   builder.Append(Encoding.Unicode.GetString(data, 0, bytes));
 
+                return operaciiposhiva;
             }
             catch (Exception ex)
             {
-             //   richTextBox1.Text += ex.Message;
+                MessageBox.Show(ex.Message);
+                return null;
             }
             finally
             {
+                
                 client.Close();
             }
         }

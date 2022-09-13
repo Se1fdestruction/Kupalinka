@@ -9,6 +9,7 @@ using System.Windows.Forms;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.Runtime.Serialization;
 using System.Net.Sockets;
+using Operp;
 
 namespace Kupalinka
 {
@@ -375,7 +376,15 @@ namespace Kupalinka
 
         private void tabControl2_Selected(object sender, TabControlEventArgs e)
         {
-            TcpClient client = null;
+            List<Operaciiposhiva> operaciiposhiva= Connecting.connect_sql_operaciiposhiva("select nomeroperaciiosn, nomeroperaciidop, nomeroperdos, naimoperacii, vremaoperacii, smenaschtuki, vremautvergdeno, popravvrem1, " +
+                    "popravvrem2, popravvrem3, popravvrem4, popravvrem5, koefficient, datadobavlenia, vremarushvrema from operp_operaciiposhiva, oper_rushnoevrema " +
+                    "where operp_operaciiposhiva.id_rushvrema = oper_rushnoevrema.id_rushvrema");
+
+            foreach (Operaciiposhiva oper in operaciiposhiva)
+            {
+                dgv_operp.Rows.Add(oper.nomeroperaсiiosn,oper.nomeroperaciidop, oper.nomeroperdos, oper.naimoperacii, oper.vremaoperacii, oper.smenaschtuki, oper.vremautvergdeno, oper.popravvrem1,
+                    oper.popravvrem2, oper.popravvrem3, oper.popravvrem4, oper.popravvrem5, oper.koefficient, oper.datadobavlenia);
+            }
 
         }
 

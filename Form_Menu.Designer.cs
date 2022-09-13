@@ -145,7 +145,22 @@
             this.tabControl3 = new System.Windows.Forms.TabControl();
             this.tabPage9 = new System.Windows.Forms.TabPage();
             this.button2 = new System.Windows.Forms.Button();
-            this.dataGridView2 = new System.Windows.Forms.DataGridView();
+            this.dgv_operp = new System.Windows.Forms.DataGridView();
+            this.NOMEROPERACII = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button21 = new System.Windows.Forms.Button();
             this.groupBox11 = new System.Windows.Forms.GroupBox();
             this.button22 = new System.Windows.Forms.Button();
@@ -390,21 +405,6 @@
             this.tabPage4 = new System.Windows.Forms.TabPage();
             this.tabPage5 = new System.Windows.Forms.TabPage();
             this.tabPage6 = new System.Windows.Forms.TabPage();
-            this.NOMEROPERACII = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column12 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column4 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column8 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column9 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column10 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column14 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column15 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column11 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Column7 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.menuStrip1.SuspendLayout();
             this.tabControl1.SuspendLayout();
             this.tabPage1.SuspendLayout();
@@ -424,7 +424,7 @@
             this.tabPage8.SuspendLayout();
             this.tabControl3.SuspendLayout();
             this.tabPage9.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_operp)).BeginInit();
             this.groupBox11.SuspendLayout();
             this.groupBox12.SuspendLayout();
             this.groupBox13.SuspendLayout();
@@ -1547,7 +1547,7 @@
             // 
             this.tabPage9.BackColor = System.Drawing.Color.Transparent;
             this.tabPage9.Controls.Add(this.button2);
-            this.tabPage9.Controls.Add(this.dataGridView2);
+            this.tabPage9.Controls.Add(this.dgv_operp);
             this.tabPage9.Controls.Add(this.button21);
             this.tabPage9.Controls.Add(this.groupBox11);
             this.tabPage9.Controls.Add(this.groupBox12);
@@ -1579,12 +1579,12 @@
             this.button2.Text = "Печать";
             this.button2.UseVisualStyleBackColor = false;
             // 
-            // dataGridView2
+            // dgv_operp
             // 
-            this.dataGridView2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            this.dgv_operp.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
-            this.dataGridView2.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dataGridView2.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.dgv_operp.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.dgv_operp.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.NOMEROPERACII,
             this.Column12,
             this.Column1,
@@ -1600,10 +1600,104 @@
             this.Column15,
             this.Column11,
             this.Column7});
-            this.dataGridView2.Location = new System.Drawing.Point(3, 602);
-            this.dataGridView2.Name = "dataGridView2";
-            this.dataGridView2.Size = new System.Drawing.Size(1241, 155);
-            this.dataGridView2.TabIndex = 91;
+            this.dgv_operp.Location = new System.Drawing.Point(3, 602);
+            this.dgv_operp.Name = "dgv_operp";
+            this.dgv_operp.Size = new System.Drawing.Size(1241, 155);
+            this.dgv_operp.TabIndex = 91;
+            // 
+            // NOMEROPERACII
+            // 
+            this.NOMEROPERACII.FillWeight = 70F;
+            this.NOMEROPERACII.HeaderText = "№ операции основной";
+            this.NOMEROPERACII.Name = "NOMEROPERACII";
+            this.NOMEROPERACII.Width = 60;
+            // 
+            // Column12
+            // 
+            this.Column12.HeaderText = "№ операции дополнит.";
+            this.Column12.Name = "Column12";
+            this.Column12.Width = 60;
+            // 
+            // Column1
+            // 
+            this.Column1.FillWeight = 70F;
+            this.Column1.HeaderText = "№ операции Dos";
+            this.Column1.Name = "Column1";
+            this.Column1.Width = 60;
+            // 
+            // Column2
+            // 
+            this.Column2.HeaderText = "Наименование операции";
+            this.Column2.Name = "Column2";
+            this.Column2.Width = 322;
+            // 
+            // Column3
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
+            this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
+            this.Column3.HeaderText = "Норма времени на 1 ед. сек.";
+            this.Column3.Name = "Column3";
+            this.Column3.Width = 57;
+            // 
+            // Column6
+            // 
+            this.Column6.HeaderText = "Норма за смену шт.";
+            this.Column6.Name = "Column6";
+            this.Column6.Width = 80;
+            // 
+            // Column4
+            // 
+            this.Column4.HeaderText = "Время утвержденное сек.";
+            this.Column4.Name = "Column4";
+            this.Column4.Width = 57;
+            // 
+            // Column8
+            // 
+            this.Column8.HeaderText = "Расчёт ручного времени сек.";
+            this.Column8.Name = "Column8";
+            this.Column8.Width = 70;
+            // 
+            // Column9
+            // 
+            this.Column9.HeaderText = "Время Поправ.1 сек.";
+            this.Column9.Name = "Column9";
+            this.Column9.Width = 57;
+            // 
+            // Column10
+            // 
+            this.Column10.HeaderText = "Время Поправ.2 сек.";
+            this.Column10.Name = "Column10";
+            this.Column10.Width = 57;
+            // 
+            // Column5
+            // 
+            this.Column5.HeaderText = "Время Поправ.3 сек.";
+            this.Column5.Name = "Column5";
+            this.Column5.Width = 57;
+            // 
+            // Column14
+            // 
+            this.Column14.HeaderText = "Время Поправ.4 сек.";
+            this.Column14.Name = "Column14";
+            this.Column14.Width = 57;
+            // 
+            // Column15
+            // 
+            this.Column15.HeaderText = "Время Поправ.5 сек.";
+            this.Column15.Name = "Column15";
+            this.Column15.Width = 57;
+            // 
+            // Column11
+            // 
+            this.Column11.HeaderText = "Коэф. на отдых %";
+            this.Column11.Name = "Column11";
+            this.Column11.Width = 57;
+            // 
+            // Column7
+            // 
+            this.Column7.HeaderText = "Дата добавления";
+            this.Column7.Name = "Column7";
+            this.Column7.Width = 90;
             // 
             // button21
             // 
@@ -3946,100 +4040,6 @@
             this.tabPage6.Text = "НИиС - В разработке";
             this.tabPage6.UseVisualStyleBackColor = true;
             // 
-            // NOMEROPERACII
-            // 
-            this.NOMEROPERACII.FillWeight = 70F;
-            this.NOMEROPERACII.HeaderText = "№ операции основной";
-            this.NOMEROPERACII.Name = "NOMEROPERACII";
-            this.NOMEROPERACII.Width = 60;
-            // 
-            // Column12
-            // 
-            this.Column12.HeaderText = "№ операции дополнит.";
-            this.Column12.Name = "Column12";
-            this.Column12.Width = 60;
-            // 
-            // Column1
-            // 
-            this.Column1.FillWeight = 70F;
-            this.Column1.HeaderText = "№ операции Dos";
-            this.Column1.Name = "Column1";
-            this.Column1.Width = 60;
-            // 
-            // Column2
-            // 
-            this.Column2.HeaderText = "Наименование операции";
-            this.Column2.Name = "Column2";
-            this.Column2.Width = 322;
-            // 
-            // Column3
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.MediumSeaGreen;
-            this.Column3.DefaultCellStyle = dataGridViewCellStyle1;
-            this.Column3.HeaderText = "Норма времени на 1 ед. сек.";
-            this.Column3.Name = "Column3";
-            this.Column3.Width = 57;
-            // 
-            // Column6
-            // 
-            this.Column6.HeaderText = "Норма за смену шт.";
-            this.Column6.Name = "Column6";
-            this.Column6.Width = 80;
-            // 
-            // Column4
-            // 
-            this.Column4.HeaderText = "Время утвержденное сек.";
-            this.Column4.Name = "Column4";
-            this.Column4.Width = 57;
-            // 
-            // Column8
-            // 
-            this.Column8.HeaderText = "Расчёт ручного времени сек.";
-            this.Column8.Name = "Column8";
-            this.Column8.Width = 70;
-            // 
-            // Column9
-            // 
-            this.Column9.HeaderText = "Время Поправ.1 сек.";
-            this.Column9.Name = "Column9";
-            this.Column9.Width = 57;
-            // 
-            // Column10
-            // 
-            this.Column10.HeaderText = "Время Поправ.2 сек.";
-            this.Column10.Name = "Column10";
-            this.Column10.Width = 57;
-            // 
-            // Column5
-            // 
-            this.Column5.HeaderText = "Время Поправ.3 сек.";
-            this.Column5.Name = "Column5";
-            this.Column5.Width = 57;
-            // 
-            // Column14
-            // 
-            this.Column14.HeaderText = "Время Поправ.4 сек.";
-            this.Column14.Name = "Column14";
-            this.Column14.Width = 57;
-            // 
-            // Column15
-            // 
-            this.Column15.HeaderText = "Время Поправ.5 сек.";
-            this.Column15.Name = "Column15";
-            this.Column15.Width = 57;
-            // 
-            // Column11
-            // 
-            this.Column11.HeaderText = "Коэф. на отдых %";
-            this.Column11.Name = "Column11";
-            this.Column11.Width = 57;
-            // 
-            // Column7
-            // 
-            this.Column7.HeaderText = "Дата добавления";
-            this.Column7.Name = "Column7";
-            this.Column7.Width = 90;
-            // 
             // Form_Menu
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -4083,7 +4083,7 @@
             this.tabControl3.ResumeLayout(false);
             this.tabPage9.ResumeLayout(false);
             this.tabPage9.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dataGridView2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dgv_operp)).EndInit();
             this.groupBox11.ResumeLayout(false);
             this.groupBox11.PerformLayout();
             this.groupBox12.ResumeLayout(false);
@@ -4198,7 +4198,7 @@
         private System.Windows.Forms.TabControl tabControl3;
         private System.Windows.Forms.TabPage tabPage9;
         private System.Windows.Forms.Button button2;
-        private System.Windows.Forms.DataGridView dataGridView2;
+        private System.Windows.Forms.DataGridView dgv_operp;
         private System.Windows.Forms.Button button21;
         private System.Windows.Forms.GroupBox groupBox11;
         private System.Windows.Forms.Button button22;
