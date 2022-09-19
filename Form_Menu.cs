@@ -15,9 +15,6 @@ namespace Kupalinka
 {
     public partial class Form_Menu : Form
     {
-        //данные сервера
-        int port = 10101;
-        string address = "192.155.11.220";
 
 
 
@@ -80,8 +77,9 @@ namespace Kupalinka
 
         private void Menu_Load(object sender, EventArgs e)
         {
-            load_sql();
+          //  load_sql();
             this.WindowState = FormWindowState.Maximized; //Раскрываем форму окна на весь экран
+            DoubleBuffered = true;
 
         }
 

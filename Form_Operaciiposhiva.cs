@@ -56,6 +56,7 @@ namespace Kupalinka
             }
             catch (FormatException o)
             {
+                MessageBox.Show(o.Message);
                 lb_vremaoperacii.Text = "";
                 lb_smenaschtuki.Text = "";
             }
